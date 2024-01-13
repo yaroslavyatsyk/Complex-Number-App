@@ -65,6 +65,8 @@ namespace Complex_Number_App
                 ResReal.Text = result.Real.ToString();
                 ResIm.Text = result.Imaginary.ToString();
 
+               
+
 
 
             }

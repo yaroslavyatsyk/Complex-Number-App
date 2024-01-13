@@ -15,10 +15,9 @@
         <TextBox x:Name="Imaginary2" HorizontalAlignment="Left" Margin="525,468,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" IsReadOnly="True"/>
         <TextBlock x:Name="Operation" HorizontalAlignment="Left" Margin="412,453,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="662,447,0,0" TextWrapping="Wrap" Text="=" VerticalAlignment="Top" FontSize="20" FontFamily="Arial Black"/>
-        <TextBox x:Name="ResReal1" HorizontalAlignment="Center" Margin="0,419,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" IsReadOnly="True"/>
-        <TextBox x:Name="ResIm1" HorizontalAlignment="Left" Margin="860,419,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" IsReadOnly="True"/>
-        <TextBox x:Name="ResReal2" HorizontalAlignment="Center" Margin="0,468,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" IsReadOnly="True"/>
-        <TextBox x:Name="ResIm2" HorizontalAlignment="Left" Margin="860,468,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" IsReadOnly="True"/>
+        <TextBox x:Name="ResReal" HorizontalAlignment="Center" Margin="0,419,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" IsReadOnly="True"/>
+        <TextBox x:Name="ResIm" HorizontalAlignment="Left" Margin="860,419,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" IsReadOnly="True"/>
+        <Button x:Name="button" Content="Close" Margin="480,902,0,0" VerticalAlignment="Top" Click="button_Click"/>
 
     </Grid>
 </Page>

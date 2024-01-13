@@ -9,6 +9,21 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Button x:Name="button" Content="Calculate" Margin="522,565,0,0" VerticalAlignment="Top" Click="button_Click"/>
+        <TextBox x:Name="FirstRealBox" HorizontalAlignment="Left" Margin="210,200,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" PlaceholderText="Enter The Real Number"/>
+
+        <TextBox x:Name="FirstImaginaryBox" HorizontalAlignment="Left" Margin="210,250,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" PlaceholderText="Enter The Imaginary Number"/>
+
+        <TextBox x:Name="SecondRealBox" HorizontalAlignment="Left" Margin="679,200,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" PlaceholderText="Enter The Real Number"/>
+
+        <TextBox x:Name="SecondImaginaryBox" HorizontalAlignment="Left" Margin="679,250,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" PlaceholderText="Enter The Imaginary Number"/>
+        <ComboBox x:Name="comboBox" Margin="480,230,0,0" Width="120">
+            <ComboBoxItem Background="{x:Null}" Content="+" FontFamily="Arial Black" FontSize="20"/>
+            <ComboBoxItem Content="-" FontFamily="Arial Black" FontSize="20"/>
+            <ComboBoxItem Content="*" FontFamily="Arial Black" FontSize="20"/>
+            <ComboBoxItem Content="/" FontFamily="Arial Black" FontSize="20"/>
+
+        </ComboBox>
 
     </Grid>
 </Page>

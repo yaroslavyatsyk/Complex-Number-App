@@ -17,13 +17,19 @@
         <TextBox x:Name="SecondRealBox" HorizontalAlignment="Left" Margin="679,200,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" PlaceholderText="Enter The Real Number"/>
 
         <TextBox x:Name="SecondImaginaryBox" HorizontalAlignment="Left" Margin="679,250,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" PlaceholderText="Enter The Imaginary Number"/>
-        <ComboBox x:Name="comboBox" Margin="480,230,0,0" Width="120">
-            <ComboBoxItem Background="{x:Null}" Content="+" FontFamily="Arial Black" FontSize="20"/>
+        <ComboBox x:Name="Operation" Margin="480,216,0,0" Width="120">
+            <ComboBoxItem Content="+" FontFamily="Arial Black" FontSize="20"/>
             <ComboBoxItem Content="-" FontFamily="Arial Black" FontSize="20"/>
             <ComboBoxItem Content="*" FontFamily="Arial Black" FontSize="20"/>
             <ComboBoxItem Content="/" FontFamily="Arial Black" FontSize="20"/>
 
         </ComboBox>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="980,232,0,0" TextWrapping="Wrap" Text="=" VerticalAlignment="Top" FontSize="20" FontFamily="Arial Black"/>
+        <TextBox x:Name="ResReal" HorizontalAlignment="Left" Margin="1059,230,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" IsReadOnly="True"/>
+        <TextBox x:Name="ResIm" HorizontalAlignment="Left" Margin="1214,230,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" IsReadOnly ="True"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="1283,234,0,0" TextWrapping="Wrap" Text="i" VerticalAlignment="Top" FontSize="20" FontFamily="Arial Black"/>
+        <TextBlock x:Name="textBlock1_Copy" HorizontalAlignment="Left" Margin="882,254,0,0" TextWrapping="Wrap" Text="i" VerticalAlignment="Top" FontSize="20" FontFamily="Arial Black"/>
+        <TextBlock x:Name="textBlock1_Copy1" HorizontalAlignment="Left" Margin="414,254,0,0" TextWrapping="Wrap" Text="i" VerticalAlignment="Top" FontSize="20" FontFamily="Arial Black"/>
 
     </Grid>
 </Page>

@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.ServiceModel.Channels;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -22,6 +24,8 @@ namespace Complex_Number_App
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        Complex_Number a;
+        Complex_Number b;
         public MainPage()
         {
             this.InitializeComponent();
@@ -29,7 +33,46 @@ namespace Complex_Number_App
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                a = new Complex_Number(double.Parse(FirstRealBox.Text), double.Parse(FirstImaginaryBox.Text));
+                b = new Complex_Number(double.Parse(SecondRealBox.Text), double.Parse(SecondImaginaryBox.Text));
+                Complex_Number result = new Complex_Number(0, 0);
 
+              ComboBoxItem comboBoxItem = (ComboBoxItem)Operation.SelectedItem;
+
+                string operation = comboBoxItem.Content.ToString();
+
+                switch (operation)
+                {
+                    case "+":
+                        result = a + b;
+                        break;
+                    case "-":
+                        result = a - b;
+                        break;
+                    case "*":
+                        result = a * b;
+                        break;
+                    case "/":
+                        result = a / b;
+                        break;
+                }
+
+          
+
+
+                ResReal.Text = result.Real.ToString();
+                ResIm.Text = result.Imaginary.ToString();
+
+
+
+            }
+            catch (Exception ex)
+            {
+               MessageDialog messageDialog = new MessageDialog(ex.Message);
+                messageDialog.ShowAsync();
+            }
         }
     }
 }

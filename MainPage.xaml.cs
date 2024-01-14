@@ -72,7 +72,8 @@ namespace Complex_Number_App
             }
             catch (Exception ex)
             {
-               MessageDialog messageDialog = new MessageDialog(ex.Message);
+                string message = "Must be entered a valid number. Please try again.";
+               MessageDialog messageDialog = new MessageDialog(message);
                 messageDialog.ShowAsync();
             }
         }

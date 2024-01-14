@@ -70,10 +70,16 @@ namespace Complex_Number_App
 
 
             }
-            catch (Exception ex)
+            catch (FormatException ex)
             {
                 string message = "Must be entered a valid number. Please try again.";
                MessageDialog messageDialog = new MessageDialog(message);
+                messageDialog.ShowAsync();
+            }
+            catch (DivideByZeroException ex)
+            {
+                string message = "Cannot divide by zero. Please try again.";
+                MessageDialog messageDialog = new MessageDialog(message);
                 messageDialog.ShowAsync();
             }
         }

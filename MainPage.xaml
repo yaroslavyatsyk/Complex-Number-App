@@ -20,7 +20,7 @@
         <ComboBox x:Name="Operation" Margin="480,216,0,0" Width="120" FontFamily="Arial Black" FontSize="20">
             <ComboBoxItem Content="+" FontFamily="Arial Black" FontSize="20"/>
             <ComboBoxItem Content="-" FontFamily="Arial Black" FontSize="20"/>
-            <ComboBoxItem Content="*" FontFamily="Arial Black" FontSize="20"/>
+            <ComboBoxItem Content="x" FontFamily="Arial Black" FontSize="20"/>
             <ComboBoxItem Content="/" FontFamily="Arial Black" FontSize="20"/>
 
         </ComboBox>

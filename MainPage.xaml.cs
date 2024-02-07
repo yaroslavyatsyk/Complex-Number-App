@@ -51,7 +51,7 @@ namespace Complex_Number_App
                     case "-":
                         result = a - b;
                         break;
-                    case "*":
+                    case "x":
                         result = a * b;
                         break;
                     case "/":
